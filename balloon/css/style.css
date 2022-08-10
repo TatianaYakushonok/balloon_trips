@@ -261,8 +261,38 @@ body {
   transform: scale(0.95);
 }
 
+.card {
+  padding: 2.5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.card__icon {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+  font-size: 6.3rem;
+}
+
 .about {
   padding-top: 8rem;
+  padding-bottom: 12rem;
+}
+
+.adventure {
+  padding: 21.6rem 0;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url("../img/adventure-bg.jpg") center/cover no-repeat;
+  transform: skewY(7deg);
+}
+.adventure > * {
+  transform: skewY(-7deg);
+}
+.adventure__paragraf {
+  line-height: 1.9rem;
 }
 
 .row {
@@ -356,4 +386,17 @@ body {
 
 .about {
   padding-top: 8rem;
+  padding-bottom: 12rem;
+}
+
+.adventure {
+  padding: 21.6rem 0;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url("../img/adventure-bg.jpg") center/cover no-repeat;
+  transform: skewY(7deg);
+}
+.adventure > * {
+  transform: skewY(-7deg);
+}
+.adventure__paragraf {
+  line-height: 1.9rem;
 }/*# sourceMappingURL=style.css.map */
