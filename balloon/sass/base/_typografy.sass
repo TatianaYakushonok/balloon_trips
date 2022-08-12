@@ -6,6 +6,11 @@
     text-transform: uppercase
     transition: all .4s ease
     backface-visibility: hidden
+    &_white
+        color: $color-white
+        &:hover
+            transform: skewY(2deg) skewX(15deg) scale(1.1)
+            text-shadow: $box-shadow
     &_gr
         background: linear-gradient(90deg, #C3956A 3.65%, $brown-color-darck 100%)
         -webkit-background-clip: text
