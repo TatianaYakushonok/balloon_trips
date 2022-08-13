@@ -89,6 +89,15 @@ body {
   color: #777;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   position: relative;
   max-width: 1440px;
@@ -620,6 +629,27 @@ body {
   opacity: 1;
 }
 
+.nav__item {
+  display: inline-block;
+  font-weight: 300;
+  color: #777;
+  text-transform: uppercase;
+}
+.nav__item--link {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.nav__item--link:link, .nav__item--link:visited {
+  color: #777;
+}
+.nav__item--link:hover {
+  color: #ba8554;
+  transform: rotate(5deg) scale(1.2);
+}
+.nav__item:not(:last-child) {
+  margin-right: 5rem;
+}
+
 .about {
   padding-top: 8rem;
   padding-bottom: 12rem;
@@ -738,6 +768,15 @@ body {
           animation-fill-mode: backwards;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+.footer {
+  padding: 8rem 0;
+  text-align: center;
+  background: #333;
+}
+.footer__logo {
+  height: 15rem;
 }
 
 .about {
