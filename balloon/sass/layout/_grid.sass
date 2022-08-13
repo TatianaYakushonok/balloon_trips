@@ -6,6 +6,8 @@
         margin-bottom: $margin-bottom-big
     @include respond(tab-land)
         max-width: 90.1rem
+    @include respond(tab-port)
+        max-width: 60rem
 
 .col-1-of-2
     width: calc((100% - #{$margin-right}) / 2)
@@ -35,3 +37,8 @@
         margin-right: $margin-right
         @include respond(tab-land)
             margin-right: 2rem
+    @include respond(tab-port)
+        width: 100%
+        margin-right: 0 !important
+        &:not(:last-child)
+            margin-bottom: 4rem

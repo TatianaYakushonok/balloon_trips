@@ -4,6 +4,8 @@
     @include respond(tab-land)
         padding-top: 5rem
         padding-bottom: 10rem
+    @include respond(tab-port)
+        padding-bottom: 40rem
 
 .adventure
     padding: 21.6rem 0
@@ -15,9 +17,13 @@
         line-height: 1.9rem
     @include respond(tab-land)
         padding: 15rem 0
+    @include respond(tab-port)
+        padding: 10rem 0
 
 .tour
     padding-top: 15rem
+    @include respond(tab-port)
+        padding-top: 10rem
 
 .feedback
     position: relative
@@ -26,3 +32,5 @@
 .contacts
     padding: 10rem
     background: linear-gradient(156.85deg, $brown-color-light 3.65%, $brown-color-darck 100%)
+    @include respond(tab-port)
+        padding: 5rem

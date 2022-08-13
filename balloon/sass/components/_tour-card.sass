@@ -4,6 +4,8 @@
     text-align: center
     perspective: 150rem
     -moz-perspective: 150rem
+    @include respond(tab-port)
+        height: 60rem
     &--side
         position: absolute
         top: 0
@@ -15,6 +17,8 @@
         border-radius: .5rem
         box-shadow: $box-shadow
         overflow: hidden
+        @include respond(tab-port)
+            height: 60rem
         &_front
             background: $color-white
         &_back
@@ -40,6 +44,9 @@
         margin-bottom: 6rem
         background-blend-mode: hard-light
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
+        @include respond(tab-port)
+            height: 30rem
+            margin-bottom: 7rem
         &_1
             background: $brown-color-light url('../img/tour-img-1.jpg') center / cover no-repeat
         &_2
@@ -59,3 +66,6 @@
                 margin-bottom: 0
             @include respond(tab-land)
                 font-size: 1.5rem
+            @include respond(tab-port)
+                font-weight: 400
+                font-size: 2.8rem

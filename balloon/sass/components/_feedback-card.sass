@@ -1,6 +1,4 @@
 .feedback__card
-    /*display: flex
-    /*gap: 4rem
     width: 85%
     margin: 0 auto
     margin-bottom: 8rem
@@ -8,10 +6,15 @@
     background: rgba($color-white, .75)
     box-shadow: $box-shadow
     transform: skew(330deg)
+    @include respond(tab-port)
+        padding: 3rem
+        transform: skew(350deg)
     &:last-child
         margin-bottom: 0
     & > *
         transform: skew(-330deg)
+        @include respond(tab-port)
+            transform: skew(-350deg)
     &--img
         position: relative
         width: 15rem
@@ -23,10 +26,17 @@
         shape-outside: circle(50% at 50% 50%)
         -webkit-shape-outside: circle(50% at 50% 50%)
         overflow: hidden
+        @include respond(tab-port)
+            float: none
+            margin: 0 auto
+            margin-bottom: 3rem
         img
             height: 100%
             transform: scale(1.2)
             transition: all .4s ease
+    &--content
+        @include respond(tab-port)
+            text-align: center
     &--name
         position: absolute
         top: 50%

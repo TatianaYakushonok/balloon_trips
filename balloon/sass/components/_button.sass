@@ -10,9 +10,12 @@
     background: $color-white
     transition: all .5s ease
     border: none
+    box-shadow: $box-shadow
     @include respond(tab-land)
         padding: 1.5rem 2rem
         font-size: 1.8rem
+    @include respond(tab-port)
+        padding: 2rem 5rem
     &_gr
         position: relative
         @include style-link($color-gray)
@@ -26,6 +29,8 @@
         border: none
         color: $color-white
         background: linear-gradient(156.85deg, $brown-color-light 3.65%, $brown-color-darck 100%)
+        @include respond(tab-port)
+            padding: 2.5rem 6rem
         &:hover
             transform: translateY(-4px)
             box-shadow: $box-shadow
@@ -42,6 +47,8 @@
             letter-spacing: .5rem
             border-radius: 5rem
             background: linear-gradient(156.85deg, $brown-color-light 3.65%, $brown-color-darck 100%)
+            @include respond(tab-port)
+                padding: 2.5rem 6rem
         &::after
             position: absolute
             top: 0

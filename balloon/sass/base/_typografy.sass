@@ -8,6 +8,8 @@
     backface-visibility: hidden
     @include respond(tab-land)
         font-size: 3rem
+    @include respond(tab-port)
+        letter-spacing: .5rem
     &_white
         color: $color-white
         &:hover
@@ -44,6 +46,9 @@
     letter-spacing: .2rem
     color: $color-white
     text-transform: uppercase
+    @include respond(tab-port)
+        top: 25rem
+        font-size: 3.8rem
     span
         background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%)
         &:first-child

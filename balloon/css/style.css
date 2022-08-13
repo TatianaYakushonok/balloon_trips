@@ -141,6 +141,11 @@ a {
     font-size: 3rem;
   }
 }
+@media (max-width: 900px) {
+  .title {
+    letter-spacing: 0.5rem;
+  }
+}
 .title_white {
   color: #fff;
 }
@@ -185,6 +190,12 @@ a {
   letter-spacing: 0.2rem;
   color: #fff;
   text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  .title-4 {
+    top: 25rem;
+    font-size: 3.8rem;
+  }
 }
 .title-4 span {
   background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
@@ -244,11 +255,17 @@ a {
   background: #fff;
   transition: all 0.5s ease;
   border: none;
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 1240px) {
   .btn {
     padding: 1.5rem 2rem;
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 900px) {
+  .btn {
+    padding: 2rem 5rem;
   }
 }
 .btn_gr {
@@ -266,6 +283,11 @@ a {
   border: none;
   color: #fff;
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
+}
+@media (max-width: 900px) {
+  .btn_gr {
+    padding: 2.5rem 6rem;
+  }
 }
 .btn_gr:hover {
   transform: translateY(-4px);
@@ -287,6 +309,11 @@ a {
   letter-spacing: 0.5rem;
   border-radius: 5rem;
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
+}
+@media (max-width: 900px) {
+  .btn_gr:link, .btn_gr:visited {
+    padding: 2.5rem 6rem;
+  }
 }
 .btn_gr::after {
   position: absolute;
@@ -423,6 +450,11 @@ a {
   perspective: 150rem;
   -moz-perspective: 150rem;
 }
+@media (max-width: 900px) {
+  .tour__card {
+    height: 60rem;
+  }
+}
 .tour__card--side {
   position: absolute;
   top: 0;
@@ -435,6 +467,11 @@ a {
   border-radius: 0.5rem;
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
+}
+@media (max-width: 900px) {
+  .tour__card--side {
+    height: 60rem;
+  }
 }
 .tour__card--side_front {
   background: #fff;
@@ -468,6 +505,12 @@ a {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
+@media (max-width: 900px) {
+  .tour__card--img {
+    height: 30rem;
+    margin-bottom: 7rem;
+  }
+}
 .tour__card--img_1 {
   background: #ba8554 url("../img/tour-img-1.jpg") center/cover no-repeat;
 }
@@ -495,10 +538,14 @@ a {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 900px) {
+  .tour__card--list_item {
+    font-weight: 400;
+    font-size: 2.8rem;
+  }
+}
 
 .feedback__card {
-  /*display: flex */
-  /*gap: 4rem */
   width: 85%;
   margin: 0 auto;
   margin-bottom: 8rem;
@@ -507,11 +554,22 @@ a {
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   transform: skew(330deg);
 }
+@media (max-width: 900px) {
+  .feedback__card {
+    padding: 3rem;
+    transform: skew(350deg);
+  }
+}
 .feedback__card:last-child {
   margin-bottom: 0;
 }
 .feedback__card > * {
   transform: skew(-330deg);
+}
+@media (max-width: 900px) {
+  .feedback__card > * {
+    transform: skew(-350deg);
+  }
 }
 .feedback__card--img {
   position: relative;
@@ -525,10 +583,22 @@ a {
   -webkit-shape-outside: circle(50% at 50% 50%);
   overflow: hidden;
 }
+@media (max-width: 900px) {
+  .feedback__card--img {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+}
 .feedback__card--img img {
   height: 100%;
   transform: scale(1.2);
   transition: all 0.4s ease;
+}
+@media (max-width: 900px) {
+  .feedback__card--content {
+    text-align: center;
+  }
 }
 .feedback__card--name {
   position: absolute;
@@ -580,10 +650,22 @@ a {
   border-radius: 0.5rem;
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 900px) {
+  .contacts__container {
+    height: 51rem;
+    background: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%, rgba(186, 133, 80, 0.8) 57%, rgba(161, 179, 3, 0.3) 100%), url("../img/contacts.jpg") center/cover no-repeat;
+  }
+}
 
 .form {
   width: 70%;
   padding: 5rem 0 5rem 5rem;
+}
+@media (max-width: 900px) {
+  .form {
+    width: 100%;
+    padding: 3rem 0 3rem 3rem;
+  }
 }
 .form__group:not(:last-child) {
   margin-bottom: 2.5rem;
@@ -591,6 +673,11 @@ a {
 @media (max-width: 1240px) {
   .form__group:not(:last-child) {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 900px) {
+  .form__group:not(:last-child) {
+    margin-bottom: 1.5rem;
   }
 }
 .form__group:nth-child(4) {
@@ -618,6 +705,11 @@ a {
 }
 .form__input:focus:invalid {
   border-bottom: 0.2rem solid #D76363;
+}
+@media (max-width: 900px) {
+  .form__input {
+    width: 95%;
+  }
 }
 .form__label {
   margin-top: 1rem;
@@ -720,6 +812,12 @@ a {
     margin-right: 1.6rem;
   }
 }
+@media (max-width: 900px) {
+  .nav__item:not(:last-child) {
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+  }
+}
 
 .about {
   padding-top: 8rem;
@@ -729,6 +827,11 @@ a {
   .about {
     padding-top: 5rem;
     padding-bottom: 10rem;
+  }
+}
+@media (max-width: 900px) {
+  .about {
+    padding-bottom: 40rem;
   }
 }
 
@@ -748,9 +851,19 @@ a {
     padding: 15rem 0;
   }
 }
+@media (max-width: 900px) {
+  .adventure {
+    padding: 10rem 0;
+  }
+}
 
 .tour {
   padding-top: 15rem;
+}
+@media (max-width: 900px) {
+  .tour {
+    padding-top: 10rem;
+  }
 }
 
 .feedback {
@@ -761,6 +874,11 @@ a {
 .contacts {
   padding: 10rem;
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
+}
+@media (max-width: 900px) {
+  .contacts {
+    padding: 5rem;
+  }
 }
 
 .row {
@@ -778,6 +896,11 @@ a {
 @media (max-width: 1240px) {
   .row {
     max-width: 90.1rem;
+  }
+}
+@media (max-width: 900px) {
+  .row {
+    max-width: 60rem;
   }
 }
 
@@ -826,6 +949,15 @@ a {
     margin-right: 2rem;
   }
 }
+@media (max-width: 900px) {
+  [class^=col-] {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+  [class^=col-]:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
 
 .header {
   position: relative;
@@ -869,6 +1001,12 @@ a {
     font-size: 4rem;
   }
 }
+@media (max-width: 900px) {
+  .header__title {
+    margin-bottom: 0;
+    font-size: 3.6rem;
+  }
+}
 .header__subtitle {
   margin-bottom: 5rem;
   font-style: normal;
@@ -889,11 +1027,22 @@ a {
     font-size: 3.5rem;
   }
 }
+@media (max-width: 900px) {
+  .header__subtitle {
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+  }
+}
 
 .footer {
   padding: 8rem 0;
   text-align: center;
   background: #333;
+}
+@media (max-width: 900px) {
+  .footer {
+    padding: 5rem 0;
+  }
 }
 .footer__logo {
   height: 15rem;
@@ -1023,6 +1172,11 @@ a {
     padding-bottom: 10rem;
   }
 }
+@media (max-width: 900px) {
+  .about {
+    padding-bottom: 40rem;
+  }
+}
 
 .adventure {
   padding: 21.6rem 0;
@@ -1040,9 +1194,19 @@ a {
     padding: 15rem 0;
   }
 }
+@media (max-width: 900px) {
+  .adventure {
+    padding: 10rem 0;
+  }
+}
 
 .tour {
   padding-top: 15rem;
+}
+@media (max-width: 900px) {
+  .tour {
+    padding-top: 10rem;
+  }
 }
 
 .feedback {
@@ -1053,4 +1217,9 @@ a {
 .contacts {
   padding: 10rem;
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
+}
+@media (max-width: 900px) {
+  .contacts {
+    padding: 5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
