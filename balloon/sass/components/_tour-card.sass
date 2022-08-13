@@ -5,7 +5,7 @@
     perspective: 150rem
     -moz-perspective: 150rem
     @include respond(tab-port)
-        height: 60rem
+        height: auto
     &--side
         position: absolute
         top: 0
@@ -18,17 +18,28 @@
         box-shadow: $box-shadow
         overflow: hidden
         @include respond(tab-port)
-            height: 60rem
+            position: relative
+            height: auto
         &_front
             background: $color-white
+            @include respond(tab-port)
+                padding-bottom: 10rem
         &_back
             color: $color-white
             transform: rotateY(180deg)
             background: linear-gradient(156.85deg, $brown-color-light 3.65%, $brown-color-darck 100%)
+            @include respond(tab-port)
+                position: relative
+                transform: rotateY(0deg)
+                padding: 8rem 5rem 5rem
+                margin-top: -12rem
+                clip-path: polygon(0 10%, 100% 20%, 100% 100%, 0 100%)
             &_tetle
                 padding: 10rem 0 8.7rem
                 font-weight: 300
                 text-transform: uppercase
+                @include respond(tab-port)
+                    font-size: 1.8rem
             &_price
                 padding-bottom: 8.7rem
                 font-weight: 500
@@ -36,6 +47,8 @@
                 line-height: 7.2rem
     &:hover &--side_front
         transform: rotateY(-180deg)
+        @include respond(tab-port)
+            transform: rotateY(0deg)
     &:hover &--side_back
         transform: rotateY(0deg)
 

@@ -24,6 +24,8 @@
         &:hover
             transform: skewY(2deg) skewX(15deg) scale(1.1)
             text-shadow: $box-shadow
+        @include respond(tab-port)
+            text-align: center
 
 .title-3
     font-weight: 700

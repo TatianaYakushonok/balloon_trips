@@ -164,6 +164,11 @@ a {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 900px) {
+  .title_gr {
+    text-align: center;
+  }
+}
 
 .title-3 {
   font-weight: 700;
@@ -452,7 +457,7 @@ a {
 }
 @media (max-width: 900px) {
   .tour__card {
-    height: 60rem;
+    height: auto;
   }
 }
 .tour__card--side {
@@ -470,21 +475,42 @@ a {
 }
 @media (max-width: 900px) {
   .tour__card--side {
-    height: 60rem;
+    position: relative;
+    height: auto;
   }
 }
 .tour__card--side_front {
   background: #fff;
+}
+@media (max-width: 900px) {
+  .tour__card--side_front {
+    padding-bottom: 10rem;
+  }
 }
 .tour__card--side_back {
   color: #fff;
   transform: rotateY(180deg);
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
 }
+@media (max-width: 900px) {
+  .tour__card--side_back {
+    position: relative;
+    transform: rotateY(0deg);
+    padding: 8rem 5rem 5rem;
+    margin-top: -12rem;
+    -webkit-clip-path: polygon(0 10%, 100% 20%, 100% 100%, 0 100%);
+            clip-path: polygon(0 10%, 100% 20%, 100% 100%, 0 100%);
+  }
+}
 .tour__card--side_back_tetle {
   padding: 10rem 0 8.7rem;
   font-weight: 300;
   text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  .tour__card--side_back_tetle {
+    font-size: 1.8rem;
+  }
 }
 .tour__card--side_back_price {
   padding-bottom: 8.7rem;
@@ -494,6 +520,11 @@ a {
 }
 .tour__card:hover .tour__card--side_front {
   transform: rotateY(-180deg);
+}
+@media (max-width: 900px) {
+  .tour__card:hover .tour__card--side_front {
+    transform: rotateY(0deg);
+  }
 }
 .tour__card:hover .tour__card--side_back {
   transform: rotateY(0deg);
@@ -664,7 +695,7 @@ a {
 @media (max-width: 900px) {
   .form {
     width: 100%;
-    padding: 3rem 0 3rem 3rem;
+    padding: 3rem;
   }
 }
 .form__group:not(:last-child) {
@@ -678,6 +709,11 @@ a {
 @media (max-width: 900px) {
   .form__group:not(:last-child) {
     margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .form__group:last-child {
+    text-align: center;
   }
 }
 .form__group:nth-child(4) {
@@ -708,7 +744,7 @@ a {
 }
 @media (max-width: 900px) {
   .form__input {
-    width: 95%;
+    width: 100%;
   }
 }
 .form__label {
@@ -793,6 +829,11 @@ a {
   color: #777;
   text-transform: uppercase;
 }
+@media (max-width: 900px) {
+  .nav__item {
+    display: block;
+  }
+}
 .nav__item--link {
   display: inline-block;
   transition: all 0.3s ease;
@@ -814,8 +855,8 @@ a {
 }
 @media (max-width: 900px) {
   .nav__item:not(:last-child) {
-    margin-right: 3rem;
-    margin-bottom: 3rem;
+    margin-right: 0;
+    margin-bottom: 4.5rem;
   }
 }
 
