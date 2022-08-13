@@ -78,6 +78,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -100,7 +101,7 @@ a {
 
 .container {
   position: relative;
-  max-width: 1440px;
+  max-width: 144rem;
   margin: 0 auto;
   background-color: #f7f7f7;
   z-index: 0;
@@ -777,6 +778,120 @@ a {
 }
 .footer__logo {
   height: 15rem;
+}
+
+.navigation__toggle {
+  display: none;
+}
+.navigation__button {
+  position: fixed;
+  top: 10rem;
+  right: 10rem;
+  width: 7rem;
+  height: 7rem;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 200;
+  cursor: pointer;
+}
+.navigation__bg {
+  position: fixed;
+  top: 11rem;
+  right: 11rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: radial-gradient(#ba8554, #a14f03);
+  z-index: 100;
+  transition: all 0.7s ease;
+}
+.navigation__nav {
+  width: 0;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 150;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.navigation__item {
+  text-align: center;
+}
+.navigation__item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  transition: all 0.4s ease;
+}
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #ba8554;
+  transform: translateX(1rem);
+}
+.navigation__toggle:checked ~ .navigation__bg {
+  transform: scale(80);
+}
+.navigation__toggle:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1;
+}
+.navigation__icon {
+  position: relative;
+  margin-top: 34px;
+}
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: #777;
+}
+.navigation__icon::before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s ease;
+}
+.navigation__icon::before {
+  top: -8px;
+}
+.navigation__icon::after {
+  top: 8px;
+}
+.navigation__button:hover .navigation__icon::before {
+  top: -10px;
+}
+.navigation__button:hover .navigation__icon::after {
+  top: 10px;
+}
+.navigation__toggle:checked + .navigation__button .navigation__icon {
+  background: transparent;
+}
+.navigation__toggle:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navigation__toggle:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 .about {
