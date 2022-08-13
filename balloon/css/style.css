@@ -197,8 +197,54 @@ body {
   border: none;
 }
 .btn_gr {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #777;
+  padding: 1.5rem 4rem;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.5rem;
+  border-radius: 5rem;
+  transition: all 0.5s ease;
+  border: none;
   color: #fff;
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
+}
+.btn_gr:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.btn_gr:hover::after {
+  opacity: 0;
+  transform: scaleX(1.5) scaleY(1.7);
+}
+.btn_gr:link, .btn_gr:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #777;
+  padding: 1.5rem 4rem;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.5rem;
+  border-radius: 5rem;
+  background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
+}
+.btn_gr::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
+  display: inline-block;
+  z-index: -1;
+  transition: all 0.4s ease;
 }
 .btn:hover {
   transform: translateY(-4px);
@@ -482,6 +528,9 @@ body {
 .form__group:not(:last-child) {
   margin-bottom: 2.5rem;
 }
+.form__group:nth-child(4) {
+  margin-bottom: 3.5rem;
+}
 .form__input {
   width: 55%;
   padding: 2rem;
@@ -539,8 +588,9 @@ body {
 }
 .form__label--radio {
   position: relative;
+  left: 3rem;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 .form__button--radio {
   position: absolute;
