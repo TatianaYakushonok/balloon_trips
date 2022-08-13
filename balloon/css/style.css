@@ -80,6 +80,26 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media (max-width: 1240px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
 
 body {
   padding: 5rem;
@@ -101,7 +121,6 @@ a {
 
 .container {
   position: relative;
-  max-width: 144rem;
   margin: 0 auto;
   background-color: #f7f7f7;
   z-index: 0;
@@ -116,6 +135,11 @@ a {
   transition: all 0.4s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+@media (max-width: 1240px) {
+  .title {
+    font-size: 3rem;
+  }
 }
 .title_white {
   color: #fff;
@@ -142,6 +166,11 @@ a {
   line-height: 2.4rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+}
+@media (max-width: 1240px) {
+  .title-3 {
+    font-size: 1.8rem;
+  }
 }
 
 .title-4 {
@@ -170,6 +199,11 @@ a {
 .paragraf {
   line-height: 140%;
 }
+@media (max-width: 1240px) {
+  .paragraf {
+    font-size: 1.5rem;
+  }
+}
 
 .text-align-center {
   text-align: center;
@@ -190,6 +224,11 @@ a {
 .margin-bottom-8rem {
   margin-bottom: 8rem;
 }
+@media (max-width: 1240px) {
+  .margin-bottom-8rem {
+    margin-bottom: 5rem;
+  }
+}
 
 .btn {
   position: relative;
@@ -205,6 +244,12 @@ a {
   background: #fff;
   transition: all 0.5s ease;
   border: none;
+}
+@media (max-width: 1240px) {
+  .btn {
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+  }
 }
 .btn_gr {
   position: relative;
@@ -445,6 +490,11 @@ a {
 .tour__card--list_item:last-child {
   margin-bottom: 0;
 }
+@media (max-width: 1240px) {
+  .tour__card--list_item {
+    font-size: 1.5rem;
+  }
+}
 
 .feedback__card {
   /*display: flex */
@@ -532,11 +582,16 @@ a {
 }
 
 .form {
-  width: 60%;
+  width: 70%;
   padding: 5rem 0 5rem 5rem;
 }
 .form__group:not(:last-child) {
   margin-bottom: 2.5rem;
+}
+@media (max-width: 1240px) {
+  .form__group:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 .form__group:nth-child(4) {
   margin-bottom: 3.5rem;
@@ -590,8 +645,18 @@ a {
   transform: translateY(-3rem);
 }
 .form__group--radio {
-  width: 40%;
   display: inline-block;
+}
+.form__group--radio:not(:last-child) {
+  margin-right: 4rem;
+}
+@media (max-width: 1240px) {
+  .form__group--radio {
+    display: block;
+  }
+  .form__group--radio:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
 .form__input--radio {
   display: none;
@@ -650,10 +715,21 @@ a {
 .nav__item:not(:last-child) {
   margin-right: 5rem;
 }
+@media (max-width: 1240px) {
+  .nav__item:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+}
 
 .about {
   padding-top: 8rem;
   padding-bottom: 12rem;
+}
+@media (max-width: 1240px) {
+  .about {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
 }
 
 .adventure {
@@ -666,6 +742,11 @@ a {
 }
 .adventure__paragraf {
   line-height: 1.9rem;
+}
+@media (max-width: 1240px) {
+  .adventure {
+    padding: 15rem 0;
+  }
 }
 
 .tour {
@@ -694,6 +775,11 @@ a {
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
+@media (max-width: 1240px) {
+  .row {
+    max-width: 90.1rem;
+  }
+}
 
 .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
@@ -702,6 +788,11 @@ a {
 .col-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
 }
+@media (max-width: 1240px) {
+  .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3);
+  }
+}
 
 .col-2-of-3 {
   width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
@@ -709,6 +800,11 @@ a {
 
 .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
+}
+@media (max-width: 1240px) {
+  .col-1-of-4 {
+    width: calc((100% - 3 * 2rem) / 4);
+  }
 }
 
 .col-2-of-4 {
@@ -724,6 +820,11 @@ a {
 }
 [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+@media (max-width: 1240px) {
+  [class^=col-]:not(:last-child) {
+    margin-right: 2rem;
+  }
 }
 
 .header {
@@ -745,6 +846,13 @@ a {
   width: 5.6rem;
   height: 7rem;
 }
+.header__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
 .header__title {
   margin-bottom: 1rem;
   font-size: 5rem;
@@ -755,6 +863,11 @@ a {
           animation-fill-mode: backwards;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+@media (max-width: 1240px) {
+  .header__title {
+    font-size: 4rem;
+  }
 }
 .header__subtitle {
   margin-bottom: 5rem;
@@ -769,6 +882,12 @@ a {
           animation-fill-mode: backwards;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+@media (max-width: 1240px) {
+  .header__subtitle {
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+  }
 }
 
 .footer {
@@ -856,12 +975,12 @@ a {
 }
 .navigation__icon {
   position: relative;
-  margin-top: 34px;
+  margin-top: 3.4rem;
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   display: inline-block;
-  width: 30px;
-  height: 2px;
+  width: 3rem;
+  height: 0.2rem;
   background: #777;
 }
 .navigation__icon::before, .navigation__icon::after {
@@ -871,16 +990,16 @@ a {
   transition: all 0.2s ease;
 }
 .navigation__icon::before {
-  top: -8px;
+  top: -0.8rem;
 }
 .navigation__icon::after {
-  top: 8px;
+  top: 0.8rem;
 }
 .navigation__button:hover .navigation__icon::before {
-  top: -10px;
+  top: -1rem;
 }
 .navigation__button:hover .navigation__icon::after {
-  top: 10px;
+  top: 1rem;
 }
 .navigation__toggle:checked + .navigation__button .navigation__icon {
   background: transparent;
@@ -898,6 +1017,12 @@ a {
   padding-top: 8rem;
   padding-bottom: 12rem;
 }
+@media (max-width: 1240px) {
+  .about {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+}
 
 .adventure {
   padding: 21.6rem 0;
@@ -909,6 +1034,11 @@ a {
 }
 .adventure__paragraf {
   line-height: 1.9rem;
+}
+@media (max-width: 1240px) {
+  .adventure {
+    padding: 15rem 0;
+  }
 }
 
 .tour {

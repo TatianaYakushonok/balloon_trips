@@ -6,6 +6,8 @@
     text-transform: uppercase
     transition: all .4s ease
     backface-visibility: hidden
+    @include respond(tab-land)
+        font-size: 3rem
     &_white
         color: $color-white
         &:hover
@@ -27,6 +29,8 @@
     line-height: 2.4rem
     letter-spacing: .2rem
     text-transform: uppercase
+    @include respond(tab-land)
+        font-size: 1.8rem
 
 .title-4
     position: absolute
@@ -49,3 +53,5 @@
 
 .paragraf
     line-height: 140%
+    @include respond(tab-land)
+        font-size: 1.5rem
