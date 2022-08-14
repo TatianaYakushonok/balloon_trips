@@ -80,22 +80,22 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   html {
     font-size: 56.25%;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 50%;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 30%;
   }
 }
-@media (min-width: 1800px) {
+@media only screen and (min-width: 1800px) {
   html {
     font-size: 75%;
   }
@@ -136,12 +136,12 @@ a {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .title {
     font-size: 3rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .title {
     letter-spacing: 0.5rem;
   }
@@ -164,7 +164,7 @@ a {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .title_gr {
     text-align: center;
   }
@@ -177,7 +177,7 @@ a {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .title-3 {
     font-size: 1.8rem;
   }
@@ -196,7 +196,7 @@ a {
   color: #fff;
   text-transform: uppercase;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .title-4 {
     top: 25rem;
     font-size: 3.8rem;
@@ -215,7 +215,7 @@ a {
 .paragraf {
   line-height: 140%;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .paragraf {
     font-size: 1.5rem;
   }
@@ -240,7 +240,7 @@ a {
 .margin-bottom-8rem {
   margin-bottom: 8rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .margin-bottom-8rem {
     margin-bottom: 5rem;
   }
@@ -262,13 +262,13 @@ a {
   border: none;
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .btn {
     padding: 1.5rem 2rem;
     font-size: 1.8rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .btn {
     padding: 2rem 5rem;
   }
@@ -289,7 +289,7 @@ a {
   color: #fff;
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .btn_gr {
     padding: 2.5rem 6rem;
   }
@@ -315,7 +315,7 @@ a {
   border-radius: 5rem;
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .btn_gr:link, .btn_gr:visited {
     padding: 2.5rem 6rem;
   }
@@ -455,7 +455,7 @@ a {
   perspective: 150rem;
   -moz-perspective: 150rem;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .tour__card {
     height: auto;
   }
@@ -473,7 +473,7 @@ a {
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .tour__card--side {
     position: relative;
     height: auto;
@@ -482,7 +482,7 @@ a {
 .tour__card--side_front {
   background: #fff;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .tour__card--side_front {
     padding-bottom: 10rem;
   }
@@ -491,8 +491,9 @@ a {
   color: #fff;
   transform: rotateY(180deg);
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
+  /*@include respond(tab-port)*/
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .tour__card--side_back {
     position: relative;
     transform: rotateY(0deg);
@@ -507,7 +508,7 @@ a {
   font-weight: 300;
   text-transform: uppercase;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .tour__card--side_back_tetle {
     font-size: 1.8rem;
   }
@@ -521,7 +522,7 @@ a {
 .tour__card:hover .tour__card--side_front {
   transform: rotateY(-180deg);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .tour__card:hover .tour__card--side_front {
     transform: rotateY(0deg);
   }
@@ -536,7 +537,7 @@ a {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .tour__card--img {
     height: 30rem;
     margin-bottom: 7rem;
@@ -579,12 +580,12 @@ a {
 .tour__card--list_item:last-child {
   margin-bottom: 0;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .tour__card--list_item {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .tour__card--list_item {
     font-weight: 400;
     font-size: 2.8rem;
@@ -600,7 +601,7 @@ a {
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   transform: skew(330deg);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .feedback__card {
     padding: 3rem;
     transform: skew(350deg);
@@ -612,7 +613,7 @@ a {
 .feedback__card > * {
   transform: skew(-330deg);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .feedback__card > * {
     transform: skew(-350deg);
   }
@@ -629,7 +630,7 @@ a {
   -webkit-shape-outside: circle(50% at 50% 50%);
   overflow: hidden;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .feedback__card--img {
     float: none;
     margin: 0 auto;
@@ -641,7 +642,7 @@ a {
   transform: scale(1.2);
   transition: all 0.4s ease;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .feedback__card--content {
     text-align: center;
   }
@@ -696,7 +697,7 @@ a {
   border-radius: 0.5rem;
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .contacts__container {
     height: 51rem;
     background: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%, rgba(186, 133, 80, 0.8) 57%, rgba(161, 179, 3, 0.3) 100%), url("../img/contacts.jpg") center/cover no-repeat;
@@ -712,7 +713,7 @@ a {
   width: 70%;
   padding: 5rem 0 5rem 5rem;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .form {
     width: 100%;
     padding: 3rem;
@@ -721,17 +722,17 @@ a {
 .form__group:not(:last-child) {
   margin-bottom: 2.5rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .form__group:not(:last-child) {
     margin-bottom: 0;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .form__group:not(:last-child) {
     margin-bottom: 1.5rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .form__group:last-child {
     text-align: center;
   }
@@ -762,7 +763,7 @@ a {
 .form__input:focus:invalid {
   border-bottom: 0.2rem solid #D76363;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .form__input {
     width: 100%;
   }
@@ -798,7 +799,7 @@ a {
 .form__group--radio:not(:last-child) {
   margin-right: 4rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .form__group--radio {
     display: block;
   }
@@ -849,7 +850,7 @@ a {
   color: #777;
   text-transform: uppercase;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .nav__item {
     display: block;
   }
@@ -868,12 +869,12 @@ a {
 .nav__item:not(:last-child) {
   margin-right: 5rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .nav__item:not(:last-child) {
     margin-right: 1.6rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .nav__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 4.5rem;
@@ -884,13 +885,13 @@ a {
   padding-top: 8rem;
   padding-bottom: 12rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .about {
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .about {
     padding-bottom: 40rem;
   }
@@ -907,12 +908,12 @@ a {
 .adventure__paragraf {
   line-height: 1.9rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .adventure {
     padding: 15rem 0;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .adventure {
     padding: 10rem 0;
   }
@@ -926,7 +927,7 @@ a {
 .tour {
   padding-top: 15rem;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .tour {
     padding-top: 10rem;
   }
@@ -941,7 +942,7 @@ a {
   padding: 10rem;
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .contacts {
     padding: 5rem;
   }
@@ -959,12 +960,12 @@ a {
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .row {
     max-width: 90.1rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .row {
     max-width: 60rem;
   }
@@ -977,7 +978,7 @@ a {
 .col-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .col-1-of-3 {
     width: calc((100% - 2 * 2rem) / 3);
   }
@@ -990,7 +991,7 @@ a {
 .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .col-1-of-4 {
     width: calc((100% - 3 * 2rem) / 4);
   }
@@ -1010,12 +1011,12 @@ a {
 [class^=col-]:not(:last-child) {
   margin-right: 6rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   [class^=col-]:not(:last-child) {
     margin-right: 2rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   [class^=col-] {
     width: 100%;
     margin-right: 0 !important;
@@ -1067,12 +1068,12 @@ a {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .header__title {
     font-size: 4rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .header__title {
     margin-bottom: 0;
     font-size: 3.6rem;
@@ -1092,13 +1093,13 @@ a {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .header__subtitle {
     margin-bottom: 3rem;
     font-size: 3.5rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .header__subtitle {
     font-size: 3.2rem;
     letter-spacing: 0.2rem;
@@ -1110,7 +1111,7 @@ a {
   text-align: center;
   background: #333;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .footer {
     padding: 5rem 0;
   }
@@ -1237,13 +1238,13 @@ a {
   padding-top: 8rem;
   padding-bottom: 12rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .about {
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .about {
     padding-bottom: 40rem;
   }
@@ -1260,12 +1261,12 @@ a {
 .adventure__paragraf {
   line-height: 1.9rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .adventure {
     padding: 15rem 0;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .adventure {
     padding: 10rem 0;
   }
@@ -1279,7 +1280,7 @@ a {
 .tour {
   padding-top: 15rem;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .tour {
     padding-top: 10rem;
   }
@@ -1294,7 +1295,7 @@ a {
   padding: 10rem;
   background: linear-gradient(156.85deg, #ba8554 3.65%, #a14f03 100%);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .contacts {
     padding: 5rem;
   }
