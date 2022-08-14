@@ -8,6 +8,10 @@
     color: $color-white
     background: linear-gradient(90.05deg, rgba($brown-color-light, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url('../img/header-bg.jpg') center / cover no-repeat
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%)
+
+    @media ( min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px)
+        background: linear-gradient(90.05deg, rgba($brown-color-light, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url('../img/header-bg_2x.jpg') center / cover no-repeat
+
     &__logo
         position: absolute
         top: 5rem

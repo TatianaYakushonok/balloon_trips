@@ -545,11 +545,26 @@ a {
 .tour__card--img_1 {
   background: #ba8554 url("../img/tour-img-1.jpg") center/cover no-repeat;
 }
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 670px), (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  .tour__card--img_1 {
+    background: #ba8554 url("../img/tour-img-1_2x.jpg") center/cover no-repeat;
+  }
+}
 .tour__card--img_2 {
   background: #ba8554 url("../img/tour-img-2.jpg") center/cover no-repeat;
 }
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 670px), (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  .tour__card--img_2 {
+    background: #ba8554 url("../img/tour-img-2_2x.jpg") center/cover no-repeat;
+  }
+}
 .tour__card--img_3 {
   background: #ba8554 url("../img/tour-img-3.jpg") center/cover no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 670px), (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  .tour__card--img_3 {
+    background: #ba8554 url("../img/tour-img-3_2x.jpg") center/cover no-repeat;
+  }
 }
 .tour__card--list {
   list-style: none;
@@ -685,6 +700,11 @@ a {
   .contacts__container {
     height: 51rem;
     background: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%, rgba(186, 133, 80, 0.8) 57%, rgba(161, 179, 3, 0.3) 100%), url("../img/contacts.jpg") center/cover no-repeat;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 670px), (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  .contacts__container {
+    background: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 57%, rgba(186, 133, 80, 0.8) 57%, rgba(161, 179, 3, 0.3) 100%), url("../img/contacts_2x.jpg") center/cover no-repeat;
   }
 }
 
@@ -897,6 +917,11 @@ a {
     padding: 10rem 0;
   }
 }
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 670px), (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  .adventure {
+    background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url("../img/adventure-bg_2x.jpg") center/cover no-repeat;
+  }
+}
 
 .tour {
   padding-top: 15rem;
@@ -1011,6 +1036,11 @@ a {
   background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url("../img/header-bg.jpg") center/cover no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 670px), (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  .header {
+    background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url("../img/header-bg_2x.jpg") center/cover no-repeat;
+  }
 }
 .header__logo {
   position: absolute;
@@ -1238,6 +1268,11 @@ a {
 @media (max-width: 900px) {
   .adventure {
     padding: 10rem 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 670px), (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  .adventure {
+    background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url("../img/adventure-bg_2x.jpg") center/cover no-repeat;
   }
 }
 
