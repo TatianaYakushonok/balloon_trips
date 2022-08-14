@@ -1,0 +1,109 @@
+.contacts__container
+    height: 50rem
+    background: linear-gradient(110deg, rgba($color-white, 0.8) 0%, rgba($color-white, 0.8) 57%, rgba(186, 133, 80, .8) 57%, rgba(161, 179, 3, .3) 100%), url('../img/contacts.jpg') center / cover no-repeat
+    border-radius: .5rem
+    box-shadow: $box-shadow
+    @include respond(tab-port)
+        height: 51rem
+        background: linear-gradient(110deg, rgba($color-white, 0.8) 0%, rgba($color-white, 0.8) 100%, rgba(186, 133, 80, .8) 57%, rgba(161, 179, 3, .3) 100%), url('../img/contacts.jpg') center / cover no-repeat
+
+    @media ( min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px)
+        background: linear-gradient(110deg, rgba($color-white, 0.8) 0%, rgba($color-white, 0.8) 57%, rgba(186, 133, 80, .8) 57%, rgba(161, 179, 3, .3) 100%), url('../img/contacts_2x.jpg') center / cover no-repeat
+
+.form
+    width: 70%
+    padding: 5rem 0 5rem 5rem
+    @include respond(tab-port)
+        width: 100%
+        padding: 3rem
+    &__group:not(:last-child)
+        margin-bottom: 2.5rem
+        @include respond(tab-land)
+            margin-bottom: 0
+        @include respond(tab-port)
+            margin-bottom: 1.5rem
+    &__group:last-child
+        @include respond(tab-port)
+            text-align: center
+    &__group:nth-child(4)
+        margin-bottom: 3.5rem
+
+    &__input
+        width: 55%
+        padding: 2rem
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: $font-size-text
+        line-height: 1.9rem
+        letter-spacing: .2rem
+        color: $color-black
+        background: $color-white
+        border: none
+        border-radius: .3rem
+        box-shadow: $box-shadow
+        border-bottom: .2rem solid transparent
+        &:focus
+            outline: none
+            border-bottom: .2rem solid #66D763
+        &:focus:invalid
+            border-bottom: .2rem solid #D76363
+        @include respond(tab-port)
+            width: 100%
+    &__label
+        margin-top: 1rem
+        margin-left: 1.5rem
+        font-size: $font-size-text
+        line-height: 1.9rem
+        letter-spacing: .2rem
+        color: $color-gray
+        display: block
+        transition: all .3s ease
+    &__input:placeholder-shown + &__label
+        opacity: 0
+        visibility: hidden
+        transform: translateY(-3rem)
+
+    &__group--radio
+        display: inline-block
+        &:not(:last-child)
+            margin-right: 4rem
+        @include respond(tab-land)
+            display: block
+            &:not(:last-child)
+                margin-bottom: 2rem
+
+    &__input--radio
+        display: none
+
+    &__label--radio
+        position: relative
+        left: 3rem
+        cursor: pointer
+        padding-left: 1.5rem
+
+    &__button--radio
+        position: absolute
+        left: -2.7rem
+        top: -.6rem
+        width: 3rem
+        height: 3rem
+        display: block
+        border-radius: 50%
+        border: .5rem solid $brown-color-darck
+        &::after
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            content: ''
+            display: block
+            width: 1.2rem
+            height: 1.2rem
+            border-radius: 50%
+            background: $brown-color-darck
+            opacity: 0
+            transition: all .2s ease
+
+    &__input--radio:checked ~ &__label--radio &__button--radio::after
+        opacity: 1

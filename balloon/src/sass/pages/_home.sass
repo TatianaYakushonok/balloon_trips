@@ -1,0 +1,39 @@
+.about
+    padding-top: 8rem
+    padding-bottom: 12rem
+    @include respond(tab-land)
+        padding-top: 5rem
+        padding-bottom: 10rem
+    @include respond(tab-port)
+        padding-bottom: 40rem
+
+.adventure
+    padding: 21.6rem 0
+    background: linear-gradient(90.05deg, rgba($brown-color-light, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url('../img/adventure-bg.jpg') center / cover no-repeat
+    transform: skewY(7deg)
+    & > *
+        transform: skewY(-7deg)
+    &__paragraf
+        line-height: 1.9rem
+    @include respond(tab-land)
+        padding: 15rem 0
+    @include respond(tab-port)
+        padding: 10rem 0
+
+    @media ( min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px)
+        background: linear-gradient(90.05deg, rgba($brown-color-light, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url('../img/adventure-bg_2x.jpg') center / cover no-repeat
+
+.tour
+    padding-top: 15rem
+    @include respond(tab-port)
+        padding-top: 10rem
+
+.feedback
+    position: relative
+    padding: 8rem 0
+
+.contacts
+    padding: 10rem
+    background: linear-gradient(156.85deg, $brown-color-light 3.65%, $brown-color-darck 100%)
+    @include respond(tab-port)
+        padding: 5rem
